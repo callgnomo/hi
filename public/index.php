@@ -2,8 +2,9 @@
 require '../basic/basic.php';
 inc([
     'controller',
-    'segment',
-    'view'
+    'error',
+    'segment'
 ]);
+error(true);
 $segmentoPrincipal=segment(1);
 controller($segmentoPrincipal.'/home');
