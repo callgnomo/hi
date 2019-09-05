@@ -1,9 +1,4 @@
 <?php
-inc([
-  'view'
-]);
-$data=[
-  'msg'=>'call hi ok!';
-];
-view('hi/home',$data);
-?>
+inc('view');
+$data['msg']='hi ok';
+view('teste/home',$data);
