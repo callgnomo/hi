@@ -1,7 +1,9 @@
 <?php
 require '../basic/basic.php';
 inc([
-    'segment'
+    'controller',
+    'segment',
+    'view'
 ]);
 $segmentoPrincipal=segment(1);
-print $segmentoPrincipal;
+controller($segmentoPrincipal.'/home');
